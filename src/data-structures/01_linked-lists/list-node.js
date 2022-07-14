@@ -1,23 +1,8 @@
-class LinkedListNode {
+class ListNode {
   constructor(value, next) {
-    this._value = value;
-
-    if (next) {
-      this._next = next;
-    } else this._next = null;
-  }
-
-  toString() {
-    return `${this._value}`;
-  }
-
-  get next() {
-    return this._next;
-  }
-
-  set next(node) {
-    this._next = node;
+    this.value = value;
+    this.next = next;
   }
 }
 
-module.exports = LinkedListNode;
+module.exports = { ListNode };
